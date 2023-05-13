@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../res/res/color.dart';
-import '../res/res/fonts.dart';
-import '../res/res/sizes.dart';
+import '../res/color.dart';
+import '../res/fonts.dart';
+import '../res/sizes.dart';
 import 'theme/widget/text_theme.dart';
 
 class AppTheme {

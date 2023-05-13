@@ -14,3 +14,4 @@ const sTxtThemeFontSizeBodSma = 12.0; const sTxtThemeFontHeightBodSma = 2.26; //
 
 /// WIDGET COMPONENTS
 const sBtnRoundHeight = 50.0;
+const sBtnRoundRadius = 50.0;

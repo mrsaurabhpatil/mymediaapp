@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "364334410229",
+    "project_id": "my-media-app-28ad3",
+    "storage_bucket": "my-media-app-28ad3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364334410229:android:62cf5205cc8a158dedd8bc",
+        "android_client_info": {
+          "package_name": "com.thesaurhub.mymediaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364334410229-mj5lbglbj2j9mrh6u3g1h4g5bd3pg13c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnDbnZvYa-pqJhg-9UYGkfJpvoMfZzQvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364334410229-mj5lbglbj2j9mrh6u3g1h4g5bd3pg13c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
