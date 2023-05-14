@@ -15,3 +15,11 @@ const sTxtThemeFontSizeBodSma = 12.0; const sTxtThemeFontHeightBodSma = 2.26; //
 /// WIDGET COMPONENTS
 const sBtnRoundHeight = 50.0;
 const sBtnRoundRadius = 50.0;
+
+/// TEXT FORM FIELD WIDGETS
+const sTFFOutlineInputBorderRadius = 8.0;
+const sTFFContentPadding = 15.0;
+
+/// DEFAULT SIZES
+const sDefaultScreenPadding = 16.0;
+const sSecondaryScreenPadding = 8.0;

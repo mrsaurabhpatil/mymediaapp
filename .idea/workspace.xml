@@ -10,29 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30cb1247-2b85-4227-9895-b831db66958d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/services/splash_services.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/singup/signup_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/res/components/input_text_field.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/res/components/sized_box.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/res/res/color.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/color.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/res/res/fonts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/fonts.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/res/res/sizes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/sizes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/routes/route_name.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes/route_name.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/res/sizes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/sizes.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/theme/widget/round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/theme/widget/round_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/theme/widget/text_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/theme/widget/text_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/theme/widget/round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/components/round_button.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/login/login_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/splash/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,20 +65,21 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "D:/AndroidStudioProjects/new_projects/mymediaapp/android/app/src",
+    "last_opened_file_path": "D:/AndroidStudioProjects/new_projects/mymediaapp/lib/res/components",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\res\components" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\android\app\src" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\view" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\utils" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\res" />
-      <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\res\components" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\android\app" />
       <recent name="D:\AndroidStudioProjects\new_projects\mymediaapp\lib\res" />
     </key>

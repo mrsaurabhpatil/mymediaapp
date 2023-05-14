@@ -21,6 +21,7 @@ dependencies:
   firebase_database: ^10.0.6
   persistent_bottom_nav_bar:
   flutter_svg: ^1.1.5
+  navigator: ^1.1.1
 
 dev_dependencies:
   flutter_test:

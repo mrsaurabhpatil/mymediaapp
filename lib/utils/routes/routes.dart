@@ -11,8 +11,10 @@ class Routes {
     switch (settings.name) {
       case RouteName.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
+
       case RouteName.loginScreen:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+
       case RouteName.signupScreen:
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
 

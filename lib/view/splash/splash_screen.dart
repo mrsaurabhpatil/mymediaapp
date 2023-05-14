@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../model/services/splash_services.dart';
 import '../../res/fonts.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,6 +11,16 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  SplashServices services = SplashServices();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    services.isLogin(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,21 +29,22 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            Image(image: AssetImage('assets/images/logo.jpg')),
+          children: [
+            const Image(image: AssetImage('assets/images/logo.jpg')),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.symmetric(vertical: 20),
               child: Center(
                 child: Text(
-                  'Tech Brothers Media',
+                  'by thesaurhub',
                   style: TextStyle(
                     fontFamily: AppFonts.sfProDisplayBold,
-                    fontSize: 40,
+                    fontSize: 18,
                     fontWeight: FontWeight.w700,
+                    color: Colors.white.withOpacity(0.7),
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
