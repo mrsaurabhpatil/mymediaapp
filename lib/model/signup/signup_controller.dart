@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/foundation.dart';
-
-import '../../utils/utils.dart';
+import 'package:my_media_app/res/strings.dart';
+import 'package:my_media_app/utils/utils.dart';
 
 class SignUpController with ChangeNotifier {
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -37,7 +37,7 @@ class SignUpController with ChangeNotifier {
             setLoading(false);
             Utils.toastMessage(error.toString());
           });
-          Utils.toastMessage('User created successfully!');
+          Utils.toastMessage(tUserCreated);
           setLoading(false);
         },
       ).onError(

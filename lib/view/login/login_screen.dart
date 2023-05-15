@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/res/components/input_text_field.dart';
+import 'package:my_media_app/res/components/round_button.dart';
+import 'package:my_media_app/res/components/sized_box.dart';
+import 'package:my_media_app/res/sizes.dart';
 import 'package:my_media_app/res/strings.dart';
-
-import '../../res/components/input_text_field.dart';
-import '../../res/components/round_button.dart';
-import '../../res/components/sized_box.dart';
-import '../../res/sizes.dart';
-import '../../utils/routes/route_name.dart';
+import 'package:my_media_app/utils/routes/route_name.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

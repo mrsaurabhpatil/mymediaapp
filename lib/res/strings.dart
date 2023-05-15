@@ -14,3 +14,4 @@ const tNewAccount = 'Don\'t have an account? ';
 const tCreateAccount = 'Create Account';
 const tForgotPassword = 'Forgot Password?';
 const tExistingAccount = 'Already have an account? ';
+const tUserCreated = 'User created successfully!';
