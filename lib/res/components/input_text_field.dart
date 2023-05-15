@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/res/color.dart';
 import 'package:my_media_app/res/sizes.dart';
-
-import '../color.dart';
 
 class InputTextField extends StatelessWidget {
   const InputTextField({

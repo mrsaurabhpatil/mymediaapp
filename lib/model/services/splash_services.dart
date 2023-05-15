@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-
-import '../../utils/routes/route_name.dart';
+import 'package:my_media_app/utils/routes/route_name.dart';
 
 class SplashServices {
   void isLogin(BuildContext context) {

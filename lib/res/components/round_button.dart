@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../color.dart';
-import '../sizes.dart';
+import 'package:my_media_app/res/color.dart';
+import 'package:my_media_app/res/sizes.dart';
 
 class RoundButton extends StatelessWidget {
   const RoundButton({
