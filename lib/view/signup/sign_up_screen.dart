@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/res/strings.dart';
+import 'package:provider/provider.dart';
 
+import '../../model/signup/signup_controller.dart';
 import '../../res/components/input_text_field.dart';
 import '../../res/components/round_button.dart';
 import '../../res/components/sized_box.dart';
@@ -15,7 +18,7 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  final _formKey = GlobalKey();
+  final _formKey = GlobalKey<FormState>();
   final usernameController = TextEditingController();
   final usernameFocusNode = FocusNode();
   final emailController = TextEditingController();
@@ -42,105 +45,123 @@ class _SignUpScreenState extends State<SignUpScreen> {
           padding: const EdgeInsets.all(sDefaultScreenPadding),
           height: height,
           width: width,
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                addVerticalSpace(height * 0.01),
-                Text('Welcome to the JungleBeat',
-                    style: Theme.of(context).textTheme.displaySmall),
-                addVerticalSpace(height * 0.01),
-                Text(
-                  'Enter your email address\nto register your account',
-                  style: Theme.of(context).textTheme.titleMedium,
-                  textAlign: TextAlign.center,
-                ),
-                addVerticalSpace(height * 0.01),
-                Form(
-                  key: _formKey,
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                        top: height * 0.06, bottom: height * 0.01),
-                    child: Column(
-                      children: [
-                        InputTextField(
-                          controller: usernameController,
-                          focusNode: usernameFocusNode,
-                          onFilledSubmittedValue: (value) {
-                            Utils.fieldFocus(
-                                context, usernameFocusNode, emailFocusNode);
-                          },
-                          fieldValidator: (value) {
-                            return value.isEmpty ? 'Enter Email' : null;
-                          },
-                          keyboardType: TextInputType.emailAddress,
-                          hint: 'Username',
-                          obscureText: false,
+          child: ChangeNotifierProvider(
+            create: (_) => SignUpController(),
+            child: Consumer<SignUpController>(
+              builder: (context, provider, child) {
+                return SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      addVerticalSpace(height * 0.01),
+                      Text(tAppHeading,
+                          style: Theme.of(context).textTheme.displaySmall),
+                      addVerticalSpace(height * 0.01),
+                      Text(
+                        tAppSignUpSubHeading,
+                        style: Theme.of(context).textTheme.titleMedium,
+                        textAlign: TextAlign.center,
+                      ),
+                      addVerticalSpace(height * 0.01),
+                      Form(
+                        key: _formKey,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                              top: height * 0.06, bottom: height * 0.01),
+                          child: Column(
+                            children: [
+                              InputTextField(
+                                controller: usernameController,
+                                focusNode: usernameFocusNode,
+                                onFilledSubmittedValue: (value) {
+                                  Utils.fieldFocus(context, usernameFocusNode,
+                                      emailFocusNode);
+                                },
+                                fieldValidator: (value) {
+                                  return value.isEmpty
+                                      ? '$tEnter $tUsername'
+                                      : null;
+                                },
+                                keyboardType: TextInputType.emailAddress,
+                                hint: tUsername,
+                                obscureText: false,
+                              ),
+                              addVerticalSpace(height * 0.01),
+                              InputTextField(
+                                controller: emailController,
+                                focusNode: emailFocusNode,
+                                onFilledSubmittedValue: (value) {
+                                  Utils.fieldFocus(context, emailFocusNode,
+                                      passwordFocusNode);
+                                },
+                                fieldValidator: (value) {
+                                  return value.isEmpty ? '$tEnter $tEmail' : null;
+                                },
+                                keyboardType: TextInputType.emailAddress,
+                                hint: tEmail,
+                                obscureText: false,
+                              ),
+                              addVerticalSpace(height * 0.01),
+                              InputTextField(
+                                controller: passwordController,
+                                focusNode: passwordFocusNode,
+                                onFilledSubmittedValue: (value) {},
+                                fieldValidator: (value) {
+                                  return value.isEmpty
+                                      ? '$tEnter $tPassword'
+                                      : null;
+                                },
+                                keyboardType: TextInputType.emailAddress,
+                                hint: tPassword,
+                                obscureText: true,
+                              ),
+                            ],
+                          ),
                         ),
-                        addVerticalSpace(height * 0.01),
-                        InputTextField(
-                          controller: emailController,
-                          focusNode: emailFocusNode,
-                          onFilledSubmittedValue: (value) {
-                            Utils.fieldFocus(
-                                context, emailFocusNode, passwordFocusNode);
-                          },
-                          fieldValidator: (value) {
-                            return value.isEmpty ? 'Enter Email' : null;
-                          },
-                          keyboardType: TextInputType.emailAddress,
-                          hint: 'Email',
-                          obscureText: false,
+                      ),
+                      addVerticalSpace(height * 0.01),
+                      RoundButton(
+                        title: tSignUp,
+                        loading: false,
+                        onPress: () {
+                          print('Signup clicked');
+                          if (_formKey.currentState!.validate()) {
+                            provider.signUp(usernameController.text,
+                                emailController.text, passwordController.text);
+                          }
+                        },
+                      ),
+                      addVerticalSpace(height * 0.02),
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, RouteName.loginScreen);
+                        },
+                        child: Text.rich(
+                          TextSpan(
+                            text: tExistingAccount,
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium!
+                                .copyWith(fontSize: 15.0),
+                            children: [
+                              TextSpan(
+                                text: tLogin,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .displayMedium!
+                                    .copyWith(
+                                        fontSize: 15.0,
+                                        decoration: TextDecoration.underline),
+                              ),
+                            ],
+                          ),
                         ),
-                        addVerticalSpace(height * 0.01),
-                        InputTextField(
-                          controller: passwordController,
-                          focusNode: passwordFocusNode,
-                          onFilledSubmittedValue: (value) {},
-                          fieldValidator: (value) {
-                            return value.isEmpty ? 'Password' : null;
-                          },
-                          keyboardType: TextInputType.emailAddress,
-                          hint: 'Password',
-                          obscureText: true,
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                ),
-                addVerticalSpace(height * 0.01),
-                RoundButton(
-                  title: 'Signup',
-                  onPress: () {},
-                ),
-                addVerticalSpace(height * 0.02),
-                InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, RouteName.loginScreen);
-                  },
-                  child: Text.rich(
-                    TextSpan(
-                      text: 'Already have an account? ',
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleMedium!
-                          .copyWith(fontSize: 15.0),
-                      children: [
-                        TextSpan(
-                          text: 'Login',
-                          style: Theme.of(context)
-                              .textTheme
-                              .displayMedium!
-                              .copyWith(
-                                  fontSize: 15.0,
-                                  decoration: TextDecoration.underline),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
+                );
+              },
             ),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/res/strings.dart';
 
 import '../../model/services/splash_services.dart';
 import '../../res/fonts.dart';
@@ -35,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
               padding: const EdgeInsets.symmetric(vertical: 20),
               child: Center(
                 child: Text(
-                  'by thesaurhub',
+                  'by $tDeveloper',
                   style: TextStyle(
                     fontFamily: AppFonts.sfProDisplayBold,
                     fontSize: 18,

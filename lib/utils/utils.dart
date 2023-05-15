@@ -5,7 +5,7 @@ import '../res/color.dart';
 
 class Utils {
   static void fieldFocus(
-      BuildContext context, FocusNode currentNode, FocusNode nextNode) {
+      BuildContext context, FocusNode currentNode, FocusNode nextNode ) {
     currentNode.unfocus();
     FocusScope.of(context).requestFocus(nextNode);
   }

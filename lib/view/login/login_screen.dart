@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/res/strings.dart';
 
 import '../../res/components/input_text_field.dart';
 import '../../res/components/round_button.dart';
@@ -45,11 +46,11 @@ class _LoginScreenState extends State<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 addVerticalSpace(height * 0.01),
-                Text('Welcome to the JungleBeat',
+                Text(tAppHeading,
                     style: Theme.of(context).textTheme.displaySmall),
                 addVerticalSpace(height * 0.01),
                 Text(
-                  'Enter your email address\nto connect to your account',
+                  tAppLoginSubHeading,
                   style: Theme.of(context).textTheme.titleMedium,
                   textAlign: TextAlign.center,
                 ),
@@ -66,10 +67,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           focusNode: emailFocusNode,
                           onFilledSubmittedValue: (value) {},
                           fieldValidator: (value) {
-                            return value.isEmpty ? 'Enter Email' : null;
+                            return value.isEmpty ? '$tEnter $tEmail' : null;
                           },
                           keyboardType: TextInputType.emailAddress,
-                          hint: 'Email',
+                          hint: tEmail,
                           obscureText: false,
                         ),
                         addVerticalSpace(height * 0.01),
@@ -78,10 +79,10 @@ class _LoginScreenState extends State<LoginScreen> {
                           focusNode: passwordFocusNode,
                           onFilledSubmittedValue: (value) {},
                           fieldValidator: (value) {
-                            return value.isEmpty ? 'Password' : null;
+                            return value.isEmpty ? '$tEnter $tPassword' : null;
                           },
                           keyboardType: TextInputType.emailAddress,
-                          hint: 'Password',
+                          hint: tPassword,
                           obscureText: true,
                         ),
                       ],
@@ -91,7 +92,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: Text(
-                    'Forgot Password?',
+                    tForgotPassword,
                     textAlign: TextAlign.end,
                     style: Theme.of(context).textTheme.displayMedium!.copyWith(
                         fontSize: 15.0, decoration: TextDecoration.underline),
@@ -99,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 addVerticalSpace(height * 0.01),
                 RoundButton(
-                  title: 'Login',
+                  title: tLogin,
                   onPress: () {},
                 ),
                 addVerticalSpace(height * 0.02),
@@ -109,14 +110,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                   child: Text.rich(
                     TextSpan(
-                      text: 'Don\'t have an account? ',
+                      text: tNewAccount,
                       style: Theme.of(context)
                           .textTheme
                           .titleMedium!
                           .copyWith(fontSize: 15.0),
                       children: [
                         TextSpan(
-                          text: 'Create One Now',
+                          text: tCreateAccount,
                           style: Theme.of(context)
                               .textTheme
                               .displayMedium!

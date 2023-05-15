@@ -10,24 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30cb1247-2b85-4227-9895-b831db66958d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/model/services/splash_services.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/model/singup/signup_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/res/components/input_text_field.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/res/components/sized_box.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/signup/signup_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/res/strings.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/res/sizes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/sizes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/theme/widget/round_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/components/round_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/singup/signup_controller.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/res/components/input_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/components/input_text_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/login/login_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/splash/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/splash/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

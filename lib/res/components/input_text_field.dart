@@ -37,6 +37,7 @@ class InputTextField extends StatelessWidget {
         onFieldSubmitted: onFilledSubmittedValue,
         validator: fieldValidator,
         keyboardType: keyboardType,
+        obscureText: obscureText,
         style: Theme.of(context).textTheme.bodyMedium!.copyWith(height: 0, fontSize: 18.0),
         decoration: InputDecoration(
           hintText: hint,
