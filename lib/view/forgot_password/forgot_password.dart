@@ -5,7 +5,6 @@ import 'package:my_media_app/res/components/round_button.dart';
 import 'package:my_media_app/res/components/sized_box.dart';
 import 'package:my_media_app/res/sizes.dart';
 import 'package:my_media_app/res/strings.dart';
-import 'package:my_media_app/utils/routes/route_name.dart';
 import 'package:provider/provider.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
