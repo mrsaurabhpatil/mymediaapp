@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../res/color.dart';
-import '../res/fonts.dart';
-import '../res/sizes.dart';
-import 'theme/widget/text_theme.dart';
+import '../../res/color.dart';
+import '../../res/fonts.dart';
+import '../../res/sizes.dart';
+import 'text_theme.dart';
 
 class AppTheme {
   AppTheme._();

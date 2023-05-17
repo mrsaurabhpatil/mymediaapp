@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:my_media_app/res/strings.dart';
+import 'package:my_media_app/utils/routes/route_name.dart';
 import 'package:my_media_app/utils/utils.dart';
 
 class SignUpController with ChangeNotifier {
@@ -17,22 +18,24 @@ class SignUpController with ChangeNotifier {
     notifyListeners();
   }
 
-  void signUp(String username, String email, String password) async {
+  void signUp(BuildContext context, String username, String email, String password) async {
     setLoading(true);
     try {
       auth
           .createUserWithEmailAndPassword(email: email, password: password)
           .then(
-        (value) {
+            (value) {
           ref.child(value.user!.uid.toString()).set({
             'uid': value.user!.uid.toString(),
             'username': username,
             'email': value.user!.email.toString(),
+            'password': password,
             'phone': '',
             'profile': '',
             'onlineStatus': 'noOne',
           }).then((value) {
             setLoading(false);
+            Navigator.pushNamed(context, RouteName.dashboardScreen);
           }).onError((error, stackTrace) {
             setLoading(false);
             Utils.toastMessage(error.toString());
@@ -41,13 +44,13 @@ class SignUpController with ChangeNotifier {
           setLoading(false);
         },
       ).onError(
-        (error, stackTrace) {
+            (error, stackTrace) {
           setLoading(false);
           Utils.toastMessage(error.toString());
         },
       );
     } catch (e) {
-      // setLoading(false);
+      setLoading(false);
       Utils.toastMessage(e.toString());
     }
   }

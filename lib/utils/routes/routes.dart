@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_media_app/view/dashboard/dashboard_screen.dart';
 
 import '../../view/login/login_screen.dart';
 import '../../view/signup/sign_up_screen.dart';
@@ -17,6 +18,9 @@ class Routes {
 
       case RouteName.signupScreen:
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
+
+      case RouteName.dashboardScreen:
+        return MaterialPageRoute(builder: (_) => const DashboardScreen());
 
       default:
         return MaterialPageRoute(builder: (_) {

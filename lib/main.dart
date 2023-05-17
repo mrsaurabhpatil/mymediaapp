@@ -4,7 +4,7 @@ import 'package:my_media_app/firebase_options.dart';
 
 import 'utils/routes/route_name.dart';
 import 'utils/routes/routes.dart';
-import 'utils/theme.dart';
+import 'utils/theme/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

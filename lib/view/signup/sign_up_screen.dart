@@ -126,9 +126,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         title: tSignUp,
                         loading: provider.loading,
                         onPress: () {
-                          print('Signup clicked');
+                          // print('Signup clicked');
                           if (_formKey.currentState!.validate()) {
-                            provider.signUp(usernameController.text, emailController.text, passwordController.text);
+                            provider.signUp(context, usernameController.text,
+                                emailController.text, passwordController.text);
                           }
                         },
                       ),
