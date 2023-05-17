@@ -8,7 +8,7 @@ import 'route_name.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-    final arguments = settings.arguments;
+    // final arguments = settings.arguments;
     switch (settings.name) {
       case RouteName.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());

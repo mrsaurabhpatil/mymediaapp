@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:my_media_app/model/services/session_manager.dart';
 import 'package:my_media_app/utils/routes/route_name.dart';
 import 'package:my_media_app/utils/utils.dart';
 
@@ -21,8 +22,9 @@ class LoginController with ChangeNotifier {
       auth
           .signInWithEmailAndPassword(email: email, password: password)
           .then((value) {
-        Navigator.pushNamed(context, RouteName.dashboardScreen);
+        SessionController().userId = value.user!.uid.toString();
         setLoading(false);
+        Navigator.pushNamed(context, RouteName.dashboardScreen);
       }).onError(
         (error, stackTrace) {
           setLoading(false);

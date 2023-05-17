@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:my_media_app/model/services/session_manager.dart';
 import 'package:my_media_app/res/strings.dart';
 import 'package:my_media_app/utils/routes/route_name.dart';
 import 'package:my_media_app/utils/utils.dart';
@@ -18,13 +19,15 @@ class SignUpController with ChangeNotifier {
     notifyListeners();
   }
 
-  void signUp(BuildContext context, String username, String email, String password) async {
+  void signUp(BuildContext context, String username, String email,
+      String password) async {
     setLoading(true);
     try {
       auth
           .createUserWithEmailAndPassword(email: email, password: password)
           .then(
-            (value) {
+        (value) {
+          SessionController().userId = value.user!.uid.toString();
           ref.child(value.user!.uid.toString()).set({
             'uid': value.user!.uid.toString(),
             'username': username,
@@ -44,7 +47,7 @@ class SignUpController with ChangeNotifier {
           setLoading(false);
         },
       ).onError(
-            (error, stackTrace) {
+        (error, stackTrace) {
           setLoading(false);
           Utils.toastMessage(error.toString());
         },
