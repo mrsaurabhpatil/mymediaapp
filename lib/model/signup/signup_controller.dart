@@ -19,21 +19,6 @@ class SignUpController with ChangeNotifier {
 
   void signUp(String username, String email, String password) async {
     setLoading(true);
-
-    try {
-      auth
-          .createUserWithEmailAndPassword(email: email, password: password)
-          .then((value) {
-        Utils.toastMessage(tUserCreated);
-      }).onError((error, stackTrace) {
-        setLoading(false);
-        Utils.toastMessage(error.toString());
-      });
-    } catch (e) {
-      setLoading(false);
-      Utils.toastMessage(e.toString());
-    }
-    /*
     try {
       auth
           .createUserWithEmailAndPassword(email: email, password: password)
@@ -65,6 +50,5 @@ class SignUpController with ChangeNotifier {
       // setLoading(false);
       Utils.toastMessage(e.toString());
     }
-    */
   }
 }
