@@ -95,7 +95,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       passwordFocusNode);
                                 },
                                 fieldValidator: (value) {
-                                  return value.isEmpty ? '$tEnter $tEmail' : null;
+                                  return value.isEmpty
+                                      ? '$tEnter $tEmail'
+                                      : null;
                                 },
                                 keyboardType: TextInputType.emailAddress,
                                 hint: tEmail,
@@ -122,12 +124,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       addVerticalSpace(height * 0.01),
                       RoundButton(
                         title: tSignUp,
-                        loading: false,
+                        loading: provider.loading,
                         onPress: () {
                           print('Signup clicked');
                           if (_formKey.currentState!.validate()) {
-                            provider.signUp(usernameController.text,
-                                emailController.text, passwordController.text);
+                            provider.signUp(usernameController.text, emailController.text, passwordController.text);
                           }
                         },
                       ),
