@@ -10,13 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30cb1247-2b85-4227-9895-b831db66958d" name="Changes" comment="MyMediaApp">
-      <change afterPath="$PROJECT_DIR$/lib/model/services/session_manager.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/forgot_password/forgot_password_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/forgot_password/forgot_password.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/model/login/login_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/login/login_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/services/splash_services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/services/splash_services.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/model/signup/signup_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/signup/signup_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/res/strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/res/strings.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/routes/route_name.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes/route_name.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/routes/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/dashboard/dashboard_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/dashboard/dashboard_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/login/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/signup/sign_up_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -123,7 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       addVerticalSpace(height * 0.01),
                       RoundButton(
-                        title: tSignUp,
+                        title: tSignUpBtn,
                         loading: provider.loading,
                         onPress: () {
                           // print('Signup clicked');

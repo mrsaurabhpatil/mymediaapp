@@ -43,7 +43,7 @@ class SignUpController with ChangeNotifier {
             setLoading(false);
             Utils.toastMessage(error.toString());
           });
-          Utils.toastMessage(tUserCreated);
+          Utils.toastMessage(tUserCreatedToast);
           setLoading(false);
         },
       ).onError(
